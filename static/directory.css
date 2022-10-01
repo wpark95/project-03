@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    height: 5rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    color: aliceblue;
+    background-color: #003153;
+}
+
+#table-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border: 1px solid;
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#legend {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+td {
+    border: 1px solid;
+    height: 3rem;
+}
+
+th {
+    border: 1px solid;
+    height: 70px;
+}

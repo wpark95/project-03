@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{{ url_for('static', filename='employee.css') }}">
+   <title>Add New Employee</title>
+</head>
+<body>
+   <a href = "/">
+      <button id="logout">GO BACK HOME</button>
+   </a>
+   <div id="header">
+      <h1>Enter New Employee Information</h1>
+   </div>
+   <form id="new-emp-info" action="{{ url_for('db_insert') }}" method="POST">
+      Alias<input required type="text" name ="name" placeholder="Enter Alias (Required)"/><br>
+      City<input required type="text" name="city" placeholder="Enter City (Required)"/><br>
+      Misc.<input type="text" name="misc" placeholder="Not Required"/><br>
+      <input id="submit-btn" type="submit" value="submit"/><br>
+   </form>
+</body>
+</html>

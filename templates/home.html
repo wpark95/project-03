@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <title>Malta08 Employee Directory</title>
+</head>
+<body>
+    <h1>Malta08 Employee Directory Hub</h1>
+    <div id="menu">
+        <a href="/directory">
+            <button>View Employee Directory</button>
+        </a>
+        <a href="/add">
+            <button>Add New Employee</button>
+        </a>
+        <a href="/delete">
+            <button>Delete Employee</button>
+        </a>
+    </div>
+    <a href="/logout">
+        <button id="logout">Log Out</button>
+    </a>
+ </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{{ url_for('static', filename='directory.css') }}">
+   <title>Malta 08 Employee Directory</title>
+</head>
+<body>
+   <a href = "/">
+      <button>GO BACK HOME</button>
+   </a>
+   <div id="header">
+      <h1>MALTA08 Employee Directory</h1>
+   </div>
+   <div id="table-container">
+      <table>
+         <thead>
+            <td id="legend">Alias</td>
+            <td id="legend">City</td>
+            <td id="legend">Misc</td>
+         </thead>
+         {% for employee in employees %}
+            <tr>
+               <td>
+                  {{ employee["name"] }}
+               </td>
+               <td>
+                  {{ employee["city"] }}
+               </td>
+               <td>
+                  {{ employee["misc"] }}
+               </td>
+            </tr>
+         {% endfor %}
+      </table>
+   </div>
+</body>
+</html>
